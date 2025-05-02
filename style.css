@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: hsl(30, 54%, 90%);
+    font-family: "Outfit", sans-serif;
+}
+
+main {
+    width: 800px;
+    border-radius: 20px ;
+    margin: 50px auto;
+    background-color: hsl(0, 0%, 100%);
+    padding: 40px;
+}
+
+
+main .imagen-principal {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden; /*sirve poner la foto en */
+}
+
+main .imagen-principal img {
+    width: 100%;
+    background-size: cover;
+}
+
+main .encabezado-pagina {
+    margin: 25px 0 15px 0;
+}
+
+main .encabezado-pagina h1 {
+    font-family: "Young Serif", serif;
+    margin: 10px 0;
+    font-size: 2.3em;
+}
+
+main .tiempo-preparacion {
+    margin: 10px 0;
+    padding: 20px;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 15px;
+}
+
+main .tiempo-preparacion h3 {
+    color: hsl(332, 51%, 32%);
+}
+
+main .tiempo-preparacion ul {
+    list-style-position: outside;
+    padding-left: 15px;
+}
+
+main .tiempo-preparacion ul li {
+    margin: 10px;
+    color: hsl(24, 5%, 18%);
+    font-weight: 400;
+    padding-left: 15px;
+}
+
+main .tiempo-preparacion ul li span {
+    font-weight: 700;
+}
+
+.card {
+    margin: 15px 0;
+    color: hsl(14, 45%, 36%);
+}
+
+/*seccion de ingredientes */
+.ingredientes h2 {
+    font-family: "Young Serif", serif;
+    margin: 10px 0;
+}
+
+.ingredientes ul {
+    list-style-position: outside;
+    padding-left: 20px;
+    
+}
+
+.ingredientes ul li{
+    padding: 8px 0 8px 20px;
+    color: hsl(30, 10%  , 34%);
+    font-weight: 500;
+
+}
+
+.ingredientes ul li::marker{
+    color:hsl(14, 45%, 36%);
+}
+
+/*seccion de instrucciones*/
+.instrucciones h2 {
+    font-family: "Young Serif", serif;
+    margin: 10px 0;
+}
+
+.instrucciones ol {
+    list-style-position: outside;
+    padding-left: 20px;
+}
+
+.instrucciones ol li{
+    padding: 8px 0 8px 15px;
+    color: hsl(30, 10%, 34%);
+}
+
+.instrucciones ol li span {
+    font-weight: 900;
+}
+
+.instrucciones ol li::marker{
+    color:hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+
+.informacion-nutricional div{
+    margin: 10px 0;
+}
+
+.informacion-nutricional div h2 {
+    font-family: "Young Serif", serif;
+    margin: 10px 0;
+}
+
+.informacion-nutricional div p {
+    color: hsl(24, 5%, 18%);
+}
+
+.informacion-nutricional table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina los espacios entre las celdas */
+}
+
+.informacion-nutricional table tr td{
+    padding: 10px 0px 10px 20px;
+    border-bottom: 1px solid black;
+    color: hsl(24, 5%, 18%);;
+    
+}
+
+.informacion-nutricional table tr td:nth-child(2){ /*para seleccionar el segundo hijo*/
+    color: hsl(14, 45%, 36%);
+    font-weight: 900;
+}
+
+@media (max-width: 376px) {
+    main {
+        width: 100%;
+        padding: 0px;
+        margin: 0;
+        padding-bottom: 30px;
+    }
+
+    main .tiempo-preparacion {
+        margin: 0 30px;
+    }
+    
+    main .encabezado-pagina, .card {
+        padding: 5px 30px;
+    }
+
+    .linea{
+        margin: 0 30px;
+        opacity: 0.5;
+    }
+}
